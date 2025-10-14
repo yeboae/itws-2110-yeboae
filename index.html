@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Jokes Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="text-center py-4 bg-primary text-white">
+            <h1><i class="fas fa-cloud-sun me-3"></i>Weather & Jokes Dashboard</h1>
+            <p class="lead">Real-time weather data with daily humor for Troy, NY</p>
+            <button id="geolocation-btn" class="btn btn-light btn-sm">
+                <i class="fas fa-location-arrow"></i> Use My Location
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <div class="row mt-4">
+            <!-- Weather Section -->
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card shadow">
+                    <div class="card-header bg-weather text-white">
+                        <h3><i class="fas fa-temperature-low me-2"></i>Current Weather</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="weather-info" class="text-center">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <p>Loading weather data...</p>
+                        </div>
+                        <div id="forecast" class="mt-4">
+                            <h5>5-Day Forecast</h5>
+                            <div id="forecast-items" class="row"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Joke Section -->
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card shadow">
+                    <div class="card-header bg-warning text-dark">
+                        <h3><i class="fas fa-laugh me-2"></i>Daily Chuckle</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="joke-info">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <p>Loading a funny joke...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Combined Data Section -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h3><i class="fas fa-lightbulb me-2"></i>Weather & Humor Insights</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="combined-insights">
+                            <p>Discover how weather and humor brighten your day...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-3 mt-4 text-muted">
+            <p>Data provided by OpenWeatherMap and JokeAPI | Lab 3 - ITWS 2110</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="apiscript.js"></script>
+</body>
+</html>
