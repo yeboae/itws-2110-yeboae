@@ -18,6 +18,7 @@ APIs I Used:
 OpenWeatherMap for all the weather data
 
 JokeAPI for the daily laughs
+Github i came across for it:https://github.com/15Dkatz/official_joke_api
 
 HTML5's built-in geolocation for the location feature
 
@@ -36,5 +37,6 @@ Pure JavaScript (no jQuery) for the API calls
 Async/await for handling the data fetching
 
 Proper error handling so it still works if APIs are down
+
 
 Mobile responsive design that looks good on any device
