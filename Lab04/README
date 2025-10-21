@@ -1,0 +1,31 @@
+Lab 4
+Heya! This lab was different for sure. I had to AI to remake Lab 3 without writing any code myself. Everything came from prompting the AI.
+
+My Prompts
+Prompt 1:
+help me write this lab please
+Uploaded the Lab 3 doc. Claude made everything - HTML, CSS, JavaScript, both APIs, Bootstrap styling, even the bonus geolocation feature.
+Prompt 2:
+how do i hide my api key in code
+Worried about visible API keys. Claude explained you can't hide them in browser code, but it's fine for class projects. Make the repo private and restrict keys on the API sites.
+Prompt 3:
+can you give me a news
+Tested if Claude could get real news. It did a web search and gave actual headlines.
+Prompt 4:
+what are prompts that are common when people ask you to write code
+Wanted to learn better prompting. Got a list of common requests and tips about being specific.
+Prompt 5:
+okay so this is what i made you do : [explained Lab 4]
+Realized this conversation WAS the assignment. Claude started helping with documentation.
+
+Prompt 8:
+shorter. too lengthy
+Asked to cut it down.
+
+Tech Used:
+
+OpenWeatherMap API
+News API
+HTML5 Geolocation
+Bootstrap 5
+Font Awesome icons
