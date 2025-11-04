@@ -1,0 +1,42 @@
+# Lab 6 - PHP Calculator
+
+Hey! For this lab, I built a web-based calculator that does more than just basic math. It uses object-oriented PHP to handle addition, subtraction, multiplication, and division in a clean, organized way.
+
+The calculator takes two numbers and lets you choose which operation to perform. It shows the full equation with the result, and it even handles tricky situations like dividing by zero without breaking.
+
+## The Journey
+
+This started with understanding how to structure the code properly. I created a main `Operation` class that handles the basics - setting up the two numbers and making sure they're actually numbers. Then each math operation gets its own class that extends the main one.
+
+I ran into the division by zero problem early on. PHP would just throw an error and stop working. I fixed this by adding proper error checking in the Division class - now it shows a friendly error message instead of crashing.
+
+The form handling was another challenge. Figuring out which button was clicked took some trial and error. I ended up checking each button separately, which works but feels a bit repetitive.
+
+## Behind the Scenes
+
+**How It Works:**
+1. You enter two numbers in the form
+2. Click one of the four operation buttons
+3. The PHP code detects which button was pressed
+4. It creates the right math operation object with your numbers
+5. The object calculates the result and displays the full equation
+6. Any errors (like non-numeric input or division by zero) get caught and shown nicely
+
+**The Tech Stuff:**
+- Object-oriented PHP with inheritance
+- Form handling with POST method
+- Error handling with try/catch blocks
+- Abstract classes and methods for the operation structure
+- Basic HTML form for the user interface
+
+## GET vs POST Discussion
+
+I used POST for the form because it's better for this kind of application. With GET, your numbers would show up in the URL bar and browser history, which isn't great for privacy. POST keeps everything hidden and can handle more data if needed.
+
+## A Better Way to Handle Buttons
+
+The current code checks each button with separate if statements. This works fine, but there's a cleaner approach - using one submit button with a dropdown to select the operation. That way we'd only need to check one value instead of four different conditions. It would make the code simpler and easier to add new operations later.
+
+## Running This Lab
+
+Since this is PHP, you'll need to run it on a server. I used XAMPP - just drop the file in your `htdocs` folder and access it through `localhost`. The form is straightforward - enter two numbers, click an operation, and see your result!
